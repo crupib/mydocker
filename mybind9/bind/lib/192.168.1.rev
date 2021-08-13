@@ -1,9 +1,0 @@
-$ttl 38400
-1.168.192.in-addr.arpa.	IN	SOA	192.168.1.130. crupib.gmail.com. (
-			1627510898
-			10800
-			3600
-			604800
-			38400 )
-1.168.192.in-addr.arpa.	IN	NS	192.168.1.130.
-101.1.168.192.in-addr.arpa.	IN	PTR	pattismith.crupi.net.

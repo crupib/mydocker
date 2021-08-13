@@ -1,9 +1,0 @@
-$ttl 38400
-crupi.net.	IN	SOA	192.168.1.130. crupib.gmail.com. (
-			1627508157
-			10800
-			3600
-			604800
-			38400 )
-crupi.net.	IN	NS	192.168.1.130.
-pattismith.crupi.net.	IN	A	192.168.1.101
