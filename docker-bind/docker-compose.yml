@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  ntp:
+    build: .
+    image: cturra/ntp:latest
+    container_name: ntp
+    restart: always
+    ports:
+      - 123:123/udp
+    read_only: true
+    tmpfs:
+      - /etc/chrony:rw,mode=1750
+      - /run/chrony:rw,mode=1750
+      - /var/lib/chrony:rw,mode=1750
+    environment:
+      - NTP_SERVERS=0.north-america.pool.ntp.org
+  bind_DC:
+    restart: always
+    image: sameersbn/bind:9.16.1-20200524
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+      - "10000:10000/tcp"
+    volumes:
+      - ./mybind9:/data
