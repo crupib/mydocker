@@ -1,0 +1,10 @@
+sort_mode=2
+long_fstypes=1
+fstab_file=/etc/fstab
+smbclient_path=smbclient
+auto_file=/etc/am-utils/amd.conf
+autofs_file=/etc/auto.master
+sysinfo=1
+show_used=1
+nmblookup_path=nmblookup
+nfs_check=1

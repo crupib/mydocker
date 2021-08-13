@@ -1,0 +1,6 @@
+zone_style=linux
+ntp_only=1
+lease=5
+seconds=1
+timeserver=0.pool.ntp.org
+timeserver_hardware=1
