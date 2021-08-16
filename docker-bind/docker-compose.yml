@@ -5,7 +5,7 @@ services:
     build: .
     image: cturra/ntp:latest
     container_name: ntp
-    restart: always
+    restart: "no"
     ports:
       - 123:123/udp
     read_only: true
@@ -16,7 +16,7 @@ services:
     environment:
       - NTP_SERVERS=0.north-america.pool.ntp.org
   bind_DC:
-    restart: always
+    restart: "no"
     image: sameersbn/bind:9.16.1-20200524
     ports:
       - "53:53/udp"
